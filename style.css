@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+/*****************
+   google fonts
+*****************/
+body{
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.container{
+    width:80%;
+    margin:0 auto;
+    
+}
+.all-button{
+border-radius:41px;
+border:none;
+Padding:10px 24px 10px 24px;
+background-color: #E02C6D;
+color:white;
+font-size: 16px;
+font-weight: 600;
+}
+.fa-arrow-right{
+    margin-left: 5px;
+}
+/* Header section starts here */
+.header-flex{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:50px;
+}
+.header-title h2{
+    font-size: 24px;
+    color:#3A3A3A;
+    font-weight:700;
+}
+ul li{
+    list-style: none;
+    display:inline-block;
+    margin:0 10px;
+}
+ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color:#3A3A3A;
+    font-weight: 600;
+    padding:5px;
+}
+ul i{
+    margin:0 10px;
+    font-size: 16px;
+    color:#3A3A3A;
+    padding:5px;
+}
+/* Header section ends here */
+/* Main section starts */
+
+/* influencer section starts */
+.influencer-section{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+.influencer-left{
+    width:100%;
+}
+.influencer-left h1{
+    font-size: 52px;
+    font-weight: 700;
+    color:#3A3A3A;
+}
+.influencer-left p{
+    font-size: 16px;
+    color:#3A3A3A;
+    font-weight: 600;
+}
+
+.influencer-right img{
+    width:100%;
+}
+
+
+/* influencer section ends */
+
+/* main section ends */
