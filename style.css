@@ -12,6 +12,14 @@ body{
     margin:0 auto;
     
 }
+#nav-toggle{
+    display:none;
+}
+.nav-toggle-icon{
+    display:none;
+    color:#3A3A3A;
+    font-size: 30px;
+}
 .all-button{
 border-radius:41px;
 border:none;
@@ -252,13 +260,42 @@ form input, textarea{
    .container{
        width:90%;
    }
+   .nav-toggle-icon{
+       display:inline-block;
+   }
+   ul{
+       position:absolute;
+       top: 80px;
+       left:0;
+       width:100%;
+       display:flex;
+       flex-direction: column;
+       align-items:center;
+       background-color:rgba(39, 36, 33, 0.514);
+       transform:translateY(-320px);
+       transition: .5s ease-in-out;
+      
+   }
+   #nav-toggle:checked ~ ul{
+    transform:translateY(10px);
+   }
+   ul li a{
+       color:white;
+   }
+   ul i{
+       color:white;
+   }
    .influencer-right{
        order:1;
+       
    }
    .influencer-right img{
     margin:0 auto;
-    width:90%
+    width:90%;
    }
+   .influencer-left h1{
+    font-size:35px;
+}
    .influencer-left{
        order:2;
        text-align: center;
@@ -284,7 +321,32 @@ form input, textarea{
     }
 }
 
+
+
 /* Mobile view ends here */
+
+/* tablet view starts here */
+@media only screen and (min-width:681px) and (max-width:992px){
+    .container{
+        width:100%;}
+    .collection, .influencer-section, .flexible-contact{
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+
+    }
+.influencer-left h1{
+    font-size:35px;
+}
+
+    .collection-box{
+        flex-direction: column;
+    }
+    
+}
+
+/* tablet view starts here */
 
 
 /* Responsive design ends here */
