@@ -224,8 +224,16 @@ form input, textarea{
     margin-left:20px;
     font-weight: 600;
 }
+textarea{
+    font-size: 16px;
+    
+}
 .contact-button{
     margin-left: 20px;
+    border-radius:5px;
+    width:40%;
+    margin:0 auto;
+    margin-top:10px;
 }
 /* contact section ends */
 
