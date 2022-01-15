@@ -177,27 +177,28 @@ ul i{
 
 }
 .flexible-contact{
-    display:flex;
+    /* display:flex;
     
-    margin:0 auto;
-    
+    margin:0 auto; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .contact-us{
-width:50%;
+width:100%;
 
 border-radius:5px;
 
 }
 .contact-us img{
-    width:80%;
+    width:100%;
     height:350px;
     border-radius:10px;
     margin-right: 20px;
    
 }
 .form-div{
-    width:50%;
+    width:100%;
 }
 .form-div form{
  width:100%;
@@ -244,3 +245,46 @@ form input, textarea{
     padding:5px;
     background-color:rgba(238, 232, 170, 0.185);
 }
+/* Responsive design starts here */
+
+/* Mobile view starts here */
+@media only screen and (max-width:680px) {
+   .container{
+       width:90%;
+   }
+   .influencer-right{
+       order:1;
+   }
+   .influencer-right img{
+    margin:0 auto;
+    width:90%
+   }
+   .influencer-left{
+       order:2;
+       text-align: center;
+   }
+    .collection, .influencer-section, .flexible-contact{
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+
+    }
+
+
+    .collection-box{
+        flex-direction: column;
+    }
+    .flexible-contact, .form-div{
+        order: 1;
+        margin-bottom:50px;
+    }
+    .flexible-contact, .contact-us{
+        order:2;
+    }
+}
+
+/* Mobile view ends here */
+
+
+/* Responsive design ends here */
